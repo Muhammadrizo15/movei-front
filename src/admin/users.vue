@@ -50,7 +50,7 @@ export default {
   mounted() {
     axios({
       method: "GET",
-      url: 'http://localhost:3033/user/',
+      url: 'http://localhost:3000/user/',
       headers: {
         Authorization: "Bearer " + this.token
       }
@@ -73,7 +73,7 @@ export default {
 
       axios({
         method: "DELETE",
-        url: 'http://localhost:3033/user/' + i,
+        url: 'http://localhost:3000/user/' + i,
         headers: {
           Authorization: "Bearer " + this.token
         }

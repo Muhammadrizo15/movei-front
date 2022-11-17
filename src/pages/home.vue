@@ -33,7 +33,7 @@
         mounted() {
             axios({
                 method: "GET",
-                url: 'http://localhost:3033/auth/profile',
+                url: 'http://localhost:3000/auth/profile',
                 headers: {
                     Authorization: 'Bearer ' + localStorage.getItem('token')
                 }

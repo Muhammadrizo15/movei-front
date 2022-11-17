@@ -45,7 +45,7 @@
             console.log(localStorage.getItem('token'))
             axios({
                 method: "GET",
-                url: 'http://localhost:3033/movie/',
+                url: 'http://localhost:3000/movie/',
                 "headers": {
                     Authorization: "Bearer " + this.token
                 }

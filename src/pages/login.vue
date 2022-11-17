@@ -55,7 +55,7 @@
             async handleSubmit() {
                 await axios({
                     method: "POST",
-                    url: 'http://localhost:3033/auth/login',
+                    url: 'http://localhost:3000/auth/login',
                     "Content-Type": "application/json",
                     data: {
                         "name": this.username,

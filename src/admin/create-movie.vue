@@ -40,7 +40,7 @@
                 e.preventDefault()
                 axios({
                     method: "POST",
-                    url: 'http://localhost:3033/movie/',
+                    url: 'http://localhost:3000/movie/',
                     headers:{
                         Authorization: "Bearer " + this.token
                     },

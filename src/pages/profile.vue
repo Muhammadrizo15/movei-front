@@ -61,7 +61,7 @@ export default {
   mounted() {
     axios({
       method: "GET",
-      url: 'http://localhost:3033/auth/profile',
+      url: 'http://localhost:3000/auth/profile',
       headers: {
         Authorization: 'Bearer ' + localStorage.getItem('token')
       }
@@ -79,7 +79,7 @@ export default {
     editPro: function (){
       axios({
         method: "PATCH",
-        url: 'http://localhost:3033/user/' + this.profile.user.id,
+        url: 'http://localhost:3000/user/' + this.profile.user.id,
         data: {
           "name": this.$refs.name.value,
           "password": this.$refs.password.value,

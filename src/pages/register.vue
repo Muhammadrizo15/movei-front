@@ -48,7 +48,7 @@
                 e.preventDefault()
                 axios({
                     method: "POST",
-                    url: 'http://localhost:3033/user/',
+                    url: 'http://localhost:3000/user/',
                     data: {
                         "name": this.$refs.username.value,
                         "password": this.$refs.password.value,

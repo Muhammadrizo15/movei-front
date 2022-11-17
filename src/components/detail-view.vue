@@ -255,7 +255,7 @@ export default {
   mounted() {
     axios({
       method: "GET",
-      url: 'http://localhost:3033/movie/' + this.id,
+      url: 'http://localhost:3000/movie/' + this.id,
       headers: {
         Authorization: "Bearer " + this.token
       }
